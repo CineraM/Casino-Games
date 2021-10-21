@@ -1,0 +1,36 @@
+C:\Users\Matias\source\repos\MainForm\MainForm\bin\Debug\MainForm.exe.config
+C:\Users\Matias\source\repos\MainForm\MainForm\bin\Debug\MainForm.exe
+C:\Users\Matias\source\repos\MainForm\MainForm\bin\Debug\MainForm.pdb
+C:\Users\Matias\source\repos\MainForm\MainForm\obj\Debug\MainForm.csproj.AssemblyReference.cache
+C:\Users\Matias\source\repos\MainForm\MainForm\obj\Debug\MainForm.main_form.resources
+C:\Users\Matias\source\repos\MainForm\MainForm\obj\Debug\MainForm.Properties.Resources.resources
+C:\Users\Matias\source\repos\MainForm\MainForm\obj\Debug\MainForm.csproj.GenerateResource.cache
+C:\Users\Matias\source\repos\MainForm\MainForm\obj\Debug\MainForm.csproj.CoreCompileInputs.cache
+C:\Users\Matias\source\repos\MainForm\MainForm\obj\Debug\MainForm.exe
+C:\Users\Matias\source\repos\MainForm\MainForm\obj\Debug\MainForm.pdb
+C:\Users\Matias\source\repos\MainForm\MainForm\obj\Debug\MainForm.Forms.DieForm.resources
+C:\Users\Ciner\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\bin\Debug\MainForm.exe.config
+C:\Users\Ciner\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\bin\Debug\MainForm.exe
+C:\Users\Ciner\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\bin\Debug\MainForm.pdb
+C:\Users\Ciner\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.csproj.AssemblyReference.cache
+C:\Users\Ciner\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.main_form.resources
+C:\Users\Ciner\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.Properties.Resources.resources
+C:\Users\Ciner\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.csproj.GenerateResource.cache
+C:\Users\Ciner\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.csproj.CoreCompileInputs.cache
+C:\Users\Ciner\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.exe
+C:\Users\Ciner\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.pdb
+C:\Users\Ciner\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.Forms.dummy_form.resources
+C:\Users\Matias\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\bin\Debug\MainForm.exe.config
+C:\Users\Matias\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\bin\Debug\MainForm.exe
+C:\Users\Matias\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\bin\Debug\MainForm.pdb
+C:\Users\Matias\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.csproj.AssemblyReference.cache
+C:\Users\Matias\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.Forms.dummy_form.resources
+C:\Users\Matias\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.main_form.resources
+C:\Users\Matias\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.Properties.Resources.resources
+C:\Users\Matias\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.csproj.GenerateResource.cache
+C:\Users\Matias\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.csproj.CoreCompileInputs.cache
+C:\Users\Matias\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.exe
+C:\Users\Matias\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.pdb
+C:\Users\Matias\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.Forms.Dice.resources
+C:\Users\Ciner\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.Forms.Dice.resources
+C:\Users\Ciner\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.Forms.BlackJack.resources
