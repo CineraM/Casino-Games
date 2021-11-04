@@ -4,6 +4,7 @@ The program lets you choose between 3 games, a dice simulator, black jack, poker
 The GUI has a flat modern design with a random multicolor theme that activates whenever you click a game button. Buttons are highlighted they are clicked.  
 ![IjPXXBXSTB](https://user-images.githubusercontent.com/64340009/138585045-9930eaec-2ab5-46d2-9154-0ae350a5ce0b.gif)  
 
-![TrC5yRbP5x](https://user-images.githubusercontent.com/64340009/139004272-1dbc51cf-9697-4f95-95e5-9f3c115eb324.gif)  
+![lxKqP4YPG4](https://user-images.githubusercontent.com/64340009/140261417-d8b0096c-e98f-4775-aa81-4a8f25a08849.gif)  
+
 Note: 
 still need to implement some of the games
