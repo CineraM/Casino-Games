@@ -29,6 +29,10 @@ namespace MainForm.Forms
             chart_histogram.ChartAreas[0].AxisY.Title = "Frecuency of Sides";
             default_chart();                                        // Call default_chart()    
         }
+        private void DieForm_Load(object sender, EventArgs e)
+        {
+            load_theme();
+        }
 
         private void load_theme() 
         {
@@ -43,10 +47,9 @@ namespace MainForm.Forms
             foreach (Control lbl in this.Controls.OfType<Label>()) 
                 lbl.ForeColor = ThemeColor.secondary_color;
 
-            //label1.ForeColor = ThemeColor.primary_color;
-            //label2.ForeColor = ThemeColor.secondary_color;
             load_chart_theme();
         }
+
         private void load_chart_theme()
         {
             try
@@ -78,7 +81,7 @@ namespace MainForm.Forms
         public void default_image()
         {
             foreach (var picture_box in this.Controls.OfType<PictureBox>()) {
-                picture_box.Image = Properties.Resources.d0;
+                picture_box.Image = Properties.Resources.dice0;
                 picture_box.SizeMode = PictureBoxSizeMode.StretchImage;
             }
         }
@@ -142,20 +145,20 @@ namespace MainForm.Forms
             label_mean_d1.Text = "Die 1 Mean: " + avgd1.ToString();
             label_mean_d2.Text = "Die 2 Mean: " + avgd2.ToString();
 
-            pictureBox_die_1_max.Image = (Image)Properties.Resources.ResourceManager.GetObject("d" + max_index_d1.ToString());
+            pictureBox_die_1_max.Image = (Image)Properties.Resources.ResourceManager.GetObject("dice" + max_index_d1.ToString());
             pictureBox_die_1_max.SizeMode = PictureBoxSizeMode.StretchImage;
             label_die1_max.Text = "f = " + max_d1.ToString();
 
-            pictureBox_die_1_min.Image = (Image)Properties.Resources.ResourceManager.GetObject("d" + min_index_d1.ToString());
+            pictureBox_die_1_min.Image = (Image)Properties.Resources.ResourceManager.GetObject("dice" + min_index_d1.ToString());
             pictureBox_die_1_min.SizeMode = PictureBoxSizeMode.StretchImage;
             label_die1_min.Text = "f = " + min_d1.ToString();
 
 
-            pictureBox_die_2_max.Image = (Image)Properties.Resources.ResourceManager.GetObject("d" + max_index_d2.ToString());
+            pictureBox_die_2_max.Image = (Image)Properties.Resources.ResourceManager.GetObject("dice" + max_index_d2.ToString());
             pictureBox_die_2_max.SizeMode = PictureBoxSizeMode.StretchImage;
             label_die2_max.Text = "f = " + max_d2.ToString();
 
-            pictureBox_die_2_min.Image = (Image)Properties.Resources.ResourceManager.GetObject("d" + min_index_d2.ToString());
+            pictureBox_die_2_min.Image = (Image)Properties.Resources.ResourceManager.GetObject("dice" + min_index_d2.ToString());
             pictureBox_die_2_min.SizeMode = PictureBoxSizeMode.StretchImage;
             label_die2_min.Text = "f = " + min_d2.ToString();
         }
@@ -186,10 +189,10 @@ namespace MainForm.Forms
             int d2_roll = die_obj_2.roll();
 
             // loads the new image for both dice picture boxes
-            pictureBox_die1.Image = (Image)Properties.Resources.ResourceManager.GetObject("d" + d1_roll.ToString());
+            pictureBox_die1.Image = (Image)Properties.Resources.ResourceManager.GetObject("dice" + d1_roll.ToString());
             pictureBox_die1.SizeMode = PictureBoxSizeMode.StretchImage;
 
-            pictureBox_die2.Image = (Image)Properties.Resources.ResourceManager.GetObject("d" + d2_roll.ToString());
+            pictureBox_die2.Image = (Image)Properties.Resources.ResourceManager.GetObject("dice" + d2_roll.ToString());
             pictureBox_die2.SizeMode = PictureBoxSizeMode.StretchImage;
 
             update_histogram(d1_roll, d2_roll); // update the rollsed die face
@@ -225,10 +228,6 @@ namespace MainForm.Forms
         }
 
 
-        private void DieForm_Load(object sender, EventArgs e)
-        {
-            load_theme();
-        }
 
         private void button_stats_Click(object sender, EventArgs e)
         {
@@ -327,19 +326,19 @@ namespace MainForm.Forms
             label_mean_d1.Text = "Die 1 Mean: " + avgd1.ToString();
             label_mean_d2.Text = "Die 2 Mean: " + avgd2.ToString();
 
-            pictureBox_die_1_max.Image = (Image)Properties.Resources.ResourceManager.GetObject("d" + max_index_d1.ToString());
+            pictureBox_die_1_max.Image = (Image)Properties.Resources.ResourceManager.GetObject("dice" + max_index_d1.ToString());
             pictureBox_die_1_max.SizeMode = PictureBoxSizeMode.StretchImage;
             label_die1_max.Text = "f = " + max_d1.ToString();
 
-            pictureBox_die_1_min.Image = (Image)Properties.Resources.ResourceManager.GetObject("d" + min_index_d1.ToString());
+            pictureBox_die_1_min.Image = (Image)Properties.Resources.ResourceManager.GetObject("dice" + min_index_d1.ToString());
             pictureBox_die_1_min.SizeMode = PictureBoxSizeMode.StretchImage;
             label_die1_min.Text = "f = " + min_d1.ToString();
 
-            pictureBox_die_2_max.Image = (Image)Properties.Resources.ResourceManager.GetObject("d" + max_index_d2.ToString());
+            pictureBox_die_2_max.Image = (Image)Properties.Resources.ResourceManager.GetObject("dice" + max_index_d2.ToString());
             pictureBox_die_2_max.SizeMode = PictureBoxSizeMode.StretchImage;
             label_die2_max.Text = "f = " + max_d2.ToString();
 
-            pictureBox_die_2_min.Image = (Image)Properties.Resources.ResourceManager.GetObject("d" + min_index_d2.ToString());
+            pictureBox_die_2_min.Image = (Image)Properties.Resources.ResourceManager.GetObject("dice" + min_index_d2.ToString());
             pictureBox_die_2_min.SizeMode = PictureBoxSizeMode.StretchImage;
             label_die2_min.Text = "f = " + min_d2.ToString();
         }
@@ -415,11 +414,11 @@ namespace MainForm.Forms
             // Update the labes and picture boxes for the mean, max and min
             label_die_sum_mean.Text = "Mean: " + avg.ToString();
 
-            pictureBox_die_sum_max.Image = (Image)Properties.Resources.ResourceManager.GetObject("d" + max_index.ToString());
+            pictureBox_die_sum_max.Image = (Image)Properties.Resources.ResourceManager.GetObject("dice" + max_index.ToString());
             pictureBox_die_sum_max.SizeMode = PictureBoxSizeMode.StretchImage;
             label_die_sum_max.Text = "f = " + max.ToString();
 
-            pictureBox_die_sum_min.Image = (Image)Properties.Resources.ResourceManager.GetObject("d" + min_index.ToString());
+            pictureBox_die_sum_min.Image = (Image)Properties.Resources.ResourceManager.GetObject("dice" + min_index.ToString());
             pictureBox_die_sum_min.SizeMode = PictureBoxSizeMode.StretchImage;
             label_die_sum_min.Text = "f = " + min.ToString();
         }

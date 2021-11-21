@@ -13,24 +13,27 @@ C:\Users\Ciner\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\
 C:\Users\Ciner\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\bin\Debug\MainForm.exe
 C:\Users\Ciner\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\bin\Debug\MainForm.pdb
 C:\Users\Ciner\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.csproj.AssemblyReference.cache
+C:\Users\Ciner\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.Forms.AceInput.resources
+C:\Users\Ciner\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.Forms.BlackJack.resources
+C:\Users\Ciner\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.Forms.Form_new_player.resources
 C:\Users\Ciner\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.main_form.resources
+C:\Users\Ciner\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.Forms.Dice.resources
 C:\Users\Ciner\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.Properties.Resources.resources
 C:\Users\Ciner\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.csproj.GenerateResource.cache
 C:\Users\Ciner\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.csproj.CoreCompileInputs.cache
 C:\Users\Ciner\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.exe
 C:\Users\Ciner\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.pdb
-C:\Users\Ciner\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.Forms.dummy_form.resources
-C:\Users\Matias\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\bin\Debug\MainForm.exe.config
-C:\Users\Matias\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\bin\Debug\MainForm.exe
-C:\Users\Matias\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\bin\Debug\MainForm.pdb
-C:\Users\Matias\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.csproj.AssemblyReference.cache
-C:\Users\Matias\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.Forms.dummy_form.resources
-C:\Users\Matias\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.main_form.resources
-C:\Users\Matias\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.Properties.Resources.resources
-C:\Users\Matias\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.csproj.GenerateResource.cache
-C:\Users\Matias\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.csproj.CoreCompileInputs.cache
-C:\Users\Matias\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.exe
-C:\Users\Matias\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.pdb
-C:\Users\Matias\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.Forms.Dice.resources
-C:\Users\Ciner\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.Forms.Dice.resources
-C:\Users\Ciner\OneDrive\Fall 2021\Software System Development\MainForm\MainForm\obj\Debug\MainForm.Forms.BlackJack.resources
+C:\Users\Matias\Desktop\Projects\Git\Casino-Games\MainForm\bin\Debug\MainForm.exe.config
+C:\Users\Matias\Desktop\Projects\Git\Casino-Games\MainForm\bin\Debug\MainForm.exe
+C:\Users\Matias\Desktop\Projects\Git\Casino-Games\MainForm\bin\Debug\MainForm.pdb
+C:\Users\Matias\Desktop\Projects\Git\Casino-Games\MainForm\obj\Debug\MainForm.csproj.AssemblyReference.cache
+C:\Users\Matias\Desktop\Projects\Git\Casino-Games\MainForm\obj\Debug\MainForm.Forms.AceInput.resources
+C:\Users\Matias\Desktop\Projects\Git\Casino-Games\MainForm\obj\Debug\MainForm.Forms.BlackJack.resources
+C:\Users\Matias\Desktop\Projects\Git\Casino-Games\MainForm\obj\Debug\MainForm.Forms.Form_new_player.resources
+C:\Users\Matias\Desktop\Projects\Git\Casino-Games\MainForm\obj\Debug\MainForm.main_form.resources
+C:\Users\Matias\Desktop\Projects\Git\Casino-Games\MainForm\obj\Debug\MainForm.Forms.Dice.resources
+C:\Users\Matias\Desktop\Projects\Git\Casino-Games\MainForm\obj\Debug\MainForm.Properties.Resources.resources
+C:\Users\Matias\Desktop\Projects\Git\Casino-Games\MainForm\obj\Debug\MainForm.csproj.GenerateResource.cache
+C:\Users\Matias\Desktop\Projects\Git\Casino-Games\MainForm\obj\Debug\MainForm.csproj.CoreCompileInputs.cache
+C:\Users\Matias\Desktop\Projects\Git\Casino-Games\MainForm\obj\Debug\MainForm.exe
+C:\Users\Matias\Desktop\Projects\Git\Casino-Games\MainForm\obj\Debug\MainForm.pdb

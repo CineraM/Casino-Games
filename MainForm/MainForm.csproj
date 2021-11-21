@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -48,6 +48,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
@@ -62,20 +64,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="aDie.cs" />
-    <Compile Include="aRandomVariable.cs" />
+    <Compile Include="Class\aCard.cs" />
+    <Compile Include="Class\aDeckOfCards.cs" />
+    <Compile Include="Class\aDie.cs" />
+    <Compile Include="Class\aRandomVariable.cs" />
+    <Compile Include="Forms\AceInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AceInput.Designer.cs">
+      <DependentUpon>AceInput.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\BlackJack.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\BlackJack.Designer.cs">
       <DependentUpon>BlackJack.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\dummy form.cs">
+    <Compile Include="Forms\NewPlayer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\dummy form.Designer.cs">
-      <DependentUpon>dummy form.cs</DependentUpon>
+    <Compile Include="Forms\NewPlayer.Designer.cs">
+      <DependentUpon>NewPlayer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Class\IDrawCard.cs" />
     <Compile Include="main_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,15 +99,18 @@
     <Compile Include="Forms\Dice.Designer.cs">
       <DependentUpon>Dice.cs</DependentUpon>
     </Compile>
-    <Compile Include="PlayingCards.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Class\aShoe.cs" />
+    <Compile Include="Class\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ThemeColor.cs" />
+    <Compile Include="Class\ThemeColor.cs" />
+    <EmbeddedResource Include="Forms\AceInput.resx">
+      <DependentUpon>AceInput.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\BlackJack.resx">
       <DependentUpon>BlackJack.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\dummy form.resx">
-      <DependentUpon>dummy form.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\NewPlayer.resx">
+      <DependentUpon>NewPlayer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="main_form.resx">
       <DependentUpon>main_form.cs</DependentUpon>
@@ -131,42 +145,6 @@
     <None Include="Resources\d0.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\d1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\d2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\d3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\d4.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\d5.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\d6.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\d7.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\d8.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\d9.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\d10.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\d11.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\d12.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\dicon64w.png" />
   </ItemGroup>
   <ItemGroup>
@@ -191,9 +169,6 @@
     <None Include="Resources\dicon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\cross-out %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Logo.png" />
   </ItemGroup>
   <ItemGroup>
@@ -213,6 +188,303 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\rouletteicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DI1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DI2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DI3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DI4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DI5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DI6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DI7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DI8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DI9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DI10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DI11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DI12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DI13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table_texture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_deck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize_button1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize_button2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross-out %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_button1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_button2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shuffling.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading_shuffle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shuffling_l.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shuffling2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moving cards.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frontbj.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black jack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\joker_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

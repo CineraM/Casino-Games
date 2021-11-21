@@ -18,9 +18,11 @@ namespace MainForm
         private int temp_index;
         private Form activate_form;
 
+
         public main_form()
         {
             InitializeComponent();
+            this.CenterToScreen();
             default_image();
             button_close_child_form.Visible = false;
             this.Text = string.Empty;                                          // remove titile
@@ -28,6 +30,7 @@ namespace MainForm
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea; // dont over exted to the task bar
             this.MaximizeBox = false;                                          // cant rezie the windows with the corners     
             this.MinimizeBox = false;                                          // need to properly design the elements again to do so
+
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -35,7 +38,7 @@ namespace MainForm
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
-        private Color SelectThemeColor()
+        public Color SelectThemeColor()
         {
             int index = random.Next(ThemeColor.ColorList.Count);
 
@@ -140,24 +143,19 @@ namespace MainForm
             this.WindowState = FormWindowState.Minimized;
         }
 
+
+        private void button_black_jack_Click(object sender, EventArgs e)
+        {
+            open_child_form(new Forms.BlackJack(), sender);
+        }
+        private void button_add_bjform_Click(object sender, EventArgs e)
+        {
+            open_child_form(new Forms.Form_new_player(), sender);
+        }
+
         private void button_dice_Click(object sender, EventArgs e)
         {
             open_child_form(new Forms.Dice(), sender);
-        }
-
-        private void button1_Click(object sender, EventArgs e) // rename alter
-        {
-            open_child_form(new Forms.dummy_form(), sender);
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            open_child_form(new Forms.dummy_form(), sender);
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            open_child_form(new Forms.dummy_form(), sender);
         }
 
         private void button_close_child_form_Click(object sender, EventArgs e)
@@ -167,9 +165,6 @@ namespace MainForm
             reset();
         }
 
-        private void button_black_jack_Click(object sender, EventArgs e)
-        {
-            open_child_form(new Forms.BlackJack(), sender);
-        }
+
     }
 }
